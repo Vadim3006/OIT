@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type='text/css'> 
+@-webkit-keyframes anim {
+ 0% 
+{
+margin-left:30px;
+margin-top:30px;
+} 
+50%{
+	margin-left: 500px;
+	margin-top: 30px;
+	background-color: red;
+	border-radius: 55px;
+}
+100% {
+margin-left:30px;
+margin-top:30px;
+} 
+} 
+#wrap1 { 
+border:4px red solid; 
+background-color: black; 
+height:100px; 
+width:100px; 
+font-size:2em; 
+animation:anim 1s infinite; 
+-webkit-animation:anim 3s infinite; 
+} 
+
+
+
+@-webkit-keyframes to {
+0% { margin-left: 30px; }
+
+50%{ border-radius: 55px; 
+background-color: yellow;
+transform: rotate(180deg);}
+100%{ margin-left: 30px; }
+}
+#ex{
+margin-top: 50px;
+margin-left: 30px;
+height:100px; 
+width:100px; 
+border: 3px black solid;
+background-color: red;
+}
+
+@-webkit-keyframes ru {
+0%{  }
+50%{ 
+transform: scale(-1, 1);
+background-color: green; 
+border-radius: 55px;
+}
+100%{   }
+}
+#ru{
+margin-top: 50px;
+margin-left: 30px;
+background-color: yellow;
+height:100px; 
+width:100px; 
+border: 3px green solid;
+
+}
+
+#io:hover #ru {
+-webkit-animation:ru 3s infinite;
+} 
+#io:hover #ex{
+-webkit-animation:to 2s infinite;
+}
+
+</style> 
+	<title></title>
+</head>
+<body>
+	<div id="io">
+<div id="wrap1"></div>
+<div id="ex"></div>
+<div id="ru"></div>
+</div>
+
+</body>
+</html>

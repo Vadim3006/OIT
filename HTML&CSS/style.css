@@ -1,0 +1,44 @@
+
+ h1,h2,h3,span {
+color:Crimson;
+font-family: Arial;	
+}
+
+/*Оформление ссылок*/
+a:visited {
+  color: green;
+}
+a:hover {
+  color: #154088; 
+   border: 3px solid lime;
+}
+
+a:active {
+  color: yellow; 
+ 
+}
+
+/*Оформление таблицы */
+table {
+	border-width: 10px 10px 10px 10px;
+	border-color: yellow;
+    border-style: ridge; 
+    width: 80%;
+    margin-left: 150px;
+}
+td{
+	padding: 10px 10px 0px 10px;
+    text-align: center;
+	font-size: 20px;
+	color: Maroon;
+	font-family: Arial Black;
+	background: RosyBrown;
+
+}
+th {
+    padding: 10px 10px 10px 10px;
+	text-align: center;
+	font-size: 35px;
+	color: green;
+	background: Aquamarine;
+}

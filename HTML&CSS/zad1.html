@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	ul{
+
+display:flex;
+list-style-type:none;}
+li{
+background:white;
+border: 2px solid red;
+padding:5px;
+margin-left:-4px;}
+a{
+color:black;
+text-decoration: none;}
+a:hover{
+color:red;
+}
+
+
+
+table{
+margin-left:20.2%;
+}
+td{
+background-color:white;
+padding:5px;
+border: 2px red solid;
+}
+
+@-webkit-keyframes anim{
+0% {opacity:0;}
+30%{opacity:1;}
+50% {opacity:0;}
+100%{opacity: 1;}
+}
+@-webkit-keyframes animat{
+0% {opacity:0;}
+50%{opacity:1;}
+80% {opacity:0;}
+100%{opacity: 1;}
+}
+
+
+.first{
+-webkit-animation:anim 2s 2;
+}
+.second{
+-webkit-animation:animat 4s 2;
+}
+	</style>
+
+</head>
+<body>
+<div class = "first"><!— способ —— список, разделители через границу border, преимущества —— может получится красиво, недостатки —— не найдено-->
+<ul><li><a href="#">первая ссылка<a></li>
+<li><a href="#">вторая ссылка<a></li>
+<li><a href="#">третья ссылка<a></li>
+<li><a href="#">четвертая ссылка<a></li>
+<li><a href="#">пятая ссылка<a></li>
+</ul>
+</div>
+<div class = "second"> <!— способ —— таблица, разделители через фоны, преимущества —— может получится красиво, недостатки —— чуть больше кода-->
+<table>
+<tr>
+<td><a href="#">первая ссылка</a></td>
+<td><a href="#">первая ссылка</a></td>
+<td><a href="#">третья ссылка</a></td>
+<td><a href="#">четвертая ссылка</a></td>
+<td><a href="#">пятая ссылка</a></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
